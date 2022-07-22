@@ -1,0 +1,336 @@
+
+
+.contact:hover {
+    margin-left: 5px;
+    transition-duration: 0.15s;
+}
+
+
+.aside {
+
+    width: 273px; 
+    background-color: rgb(160, 181, 200);
+    
+    padding: 90px;
+    padding-top: 180px;
+    transition: ease-in-out;
+    transition-duration: 500ms;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    margin-left: -2px;
+    margin-top: -110px;
+}
+
+.aside.show {
+    margin-left: -260px;
+}
+
+#navigation {
+    margin-bottom: 60px;
+    transition-duration: 500ms;
+    transition: ease-in-out
+}
+
+#btn {
+    position: absolute;
+    top: 10px;
+    left: 250px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.navbar:hover {
+    background: aliceblue;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+.movie_section{
+    display: flex;
+        flex-direction: column;
+        padding: 4rem;
+
+}
+button{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    padding: 0.7rem;
+    background:rgba(52, 51, 51) ;
+}
+    .searchbar{
+        margin: 2rem;
+        justify-content: center;
+        width: 400px;
+       
+        background: rgba(52, 51, 51);
+        box-shadow: 0px 4px 5px rgb(64, 64, 64);
+        padding: 1rem;
+        border-radius: 5px;
+        color: white;
+    }
+    .searchbar input{
+        background: transparent;
+        padding: 0.3rem;
+        margin-bottom: 1rem;
+    }
+    .fa-search{
+        font-size: 30px;
+
+    }
+    .search:focus{
+        outline: none;
+        background: transparent;
+
+    }
+    .search::placeholder{
+        color: rgb(227, 227, 227);
+        font-size: 18px;
+        font-weight: 400;
+    }
+        div {
+           display: grid;
+           grid-template-columns: repeat(4,1fr);
+        }
+    
+        .movie {
+    background: linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, rgba(29, 29, 29, 0.8) 80.79%);
+                border-radius: 5px;
+                box-shadow: 0 8px 19px rgba(0, 0, 0, 0.2);
+                overflow: hidden;
+                position: relative;
+                margin: 1rem;
+                justify-content: center;
+                align-content: center;
+                width: 360px;
+                height: 540px;
+                display: flex;
+                flex-direction: column;
+                background-color: transparent;
+               
+              
+        }
+       
+       .movie img{
+        background-color: transparent;
+        width: 100%;
+        opacity:0.5;
+       transition: cubic-bezier(1, 0, 0, 1);
+       transition-duration: 0.4s;
+        
+       }
+                .movie-info {
+font-family: 'Montserrat', sans-serif;
+                    position:absolute;
+                    top: 320px;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    color: rgb(232, 178, 53);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    padding: 0.5rem 1rem 1rem;
+                    letter-spacing: 0.5px;
+                    font-size: 24px;
+                }
+        
+                .movie-info h3 {
+                    font-family: 'Montserrat', sans-serif;
+                    color: rgb(255, 255, 255);
+                    margin: 0;
+                    font-size: 35px;
+                    font-weight: 800;
+                }
+        
+                .movie-info span {
+                    font-family: 'Montserrat', sans-serif;
+                    background-color: #1d1d1de1;
+                    border-radius: 3px;
+                    font-weight: bold;
+                    padding: 0.8rem;
+                    margin: 0.4rem;
+        
+                }
+        .view{
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 22px;
+            margin: 0.8rem;
+            text-decoration: underline;
+            font-family: 'Montserrat', sans-serif;
+        }
+       .overview {
+        display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            
+    background: rgba(245, 245, 245, 0.944);
+    padding: 4rem;
+    position: absolute;
+    max-height: 100%;
+    overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(101%);
+    transition: transform 0.36s ease-in;
+    color: black;
+    border-radius: 260px 0px 0px 0px;
+}
+
+
+
+.movie:hover .overview {
+    transform: translateY(0);
+}
+.movie:hover img{
+    transform: scale(1.1);
+}
+        .section{
+            display: flex;
+            flex-direction: row;
+           
+        }
+.grid{
+   display: flex;
+   flex-grow: 1;
+}
+.movie_section{
+    display: flex;
+    flex-direction: column;
+}
+  
+
+
+ @media  (max-width: 600px){
+    div {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+}
+ @media (max-width:800px) {
+    div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+                         .movie {
+                             background: linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, rgba(29, 29, 29, 0.8) 80.79%);
+                             border-radius: 3px;
+                             box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+                             overflow: hidden;
+                             position: relative;
+                             margin: 1rem;
+                             justify-content: center;
+                             align-content: center;
+                             width: 365px;
+                             height: 450px;
+                             display: flex;
+                             flex-direction: column;
+                             background-color: transparent;
+            
+            
+                         }
+ }
+  @media (max-width:1000px) {
+      div {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+      }
+
+      .movie {
+          background: linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, rgba(29, 29, 29, 0.8) 80.79%);
+          border-radius: 3px;
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+          overflow: hidden;
+          position: relative;
+          margin: 1rem;
+          justify-content: center;
+          align-content: center;
+          width: 365px;
+          height: 450px;
+          display: flex;
+          flex-direction: column;
+          background-color: transparent;
+
+
+      }
+  }
+  @media (max-width:575px) {
+      div {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+      }
+
+      .movie {
+          background: linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, rgba(29, 29, 29, 0.8) 80.79%);
+          border-radius: 3px;
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+          overflow: hidden;
+          position: relative;
+          margin: 1rem;
+          justify-content: center;
+          align-content: center;
+          width: 365px;
+          height: 450px;
+          display: flex;
+          flex-direction: column;
+          background-color: transparent;
+
+
+      }
+  }
+        @media (max-width:768px) {
+            div {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+    
+            .movie {
+                background: linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, rgba(29, 29, 29, 0.8) 80.79%);
+                border-radius: 3px;
+                box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+                overflow: hidden;
+                position: relative;
+                margin: 1rem;
+                justify-content: center;
+                align-content: center;
+                width: 365px;
+                height: 450px;
+                display: flex;
+                flex-direction: column;
+                background-color: transparent;
+    
+    
+            }
+        }
+                @media (max-width:1500px) {
+                    div {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+        
+                    .movie {
+                        background: linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, rgba(29, 29, 29, 0.8) 80.79%);
+                        border-radius: 3px;
+                        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+                        overflow: hidden;
+                        position: relative;
+                        margin: 1rem;
+                        justify-content: center;
+                        align-content: center;
+                        width: 365px;
+                        height: 450px;
+                        display: flex;
+                        flex-direction: column;
+                        background-color: transparent;
+        
+        
+                    }
+                }

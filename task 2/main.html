@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a1aa650699.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script>
+        $(document).ready(function () {
+            $('#btn').click(function () {
+                $('.aside').toggleClass('show');
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <header class="bg-white drop-shadow-md h-16 border-r-8 border-slate-600 ">
+        <ul class="flex justify-start">
+            <img src="https://avatars.githubusercontent.com/u/26352153?s=280&v=4" class=" h-16 px-8 py-2 swc" alt="">
+            <li class="py-4 font-bold font-sans text-lg directory">Directory</li>
+        </ul>
+    </header>
+    <div class="section">
+    <div id="navbox" class="aside">
+        <label id="btn" for="click">
+            <i class="fa-solid fa-bars"></i></label>
+        <ul>
+            <li class="navbar" id="navigation"><a href="#row">Search Results</a></li>
+            <li class="navbar" id="navigation">All Team</li>
+            <li class="navbar" id="navigation">Core</li>
+            <li class="navbar" id="navigation">Developers</li>
+            <li class="navbar" id="navigation">Designers</li>
+            <li class="navbar" id="navigation">Mentors</li>
+            <li class="navbar1" class="py-12 ">
+                <button class="bg-black rounded-lg h-12 w-40 text-lg text-white font-semibold font-sans contact" type="button">
+                    + Contact
+                </button>
+            </li>
+        </ul>
+    </div>
+   <div class="movie_section">
+    <form action="" class="searchbar" id="form">
+        <button type="submit"><i class="fa-solid fa-search"></i></button>
+        
+        <input type="search" id="search" class="search" placeholder="Enter Movie Name"> 
+    </form>
+    
+    <div class="grid" >
+        <div  class="card" id="main">
+        </div>
+    </div>
+ 
+</div>
+    </div>
+
+<script src="index.js" async defer></script>
+    
+</body>
+
+</html>
